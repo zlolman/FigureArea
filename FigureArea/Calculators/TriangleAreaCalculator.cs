@@ -27,7 +27,7 @@
         public static int GetParamsCount() => _paramsCount;
         public bool IsValidParametres(double[] parametres)
         {
-            if (parametres.Length < 3)
+            if (parametres.Length < _paramsCount)
                 return false;
 
             if (parametres.Any(x => x <= 0))
